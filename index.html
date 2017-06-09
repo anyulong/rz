@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>日志管理系统</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+       <div class="container-fluid  header">
+           <div class=" navbar-header">
+               <a href="#" class=" navbar-brand">
+                   <img src="images/logo.png" alt=""/>
+               </a>
+               <img src="images/fengexian.png" alt=""style="margin-top: 30px"/>
+           </div>
+           <span class="header_lf_text">
+               日志管理平台<br/>
+               LOG MANAGEMENT PLATFORM
+           </span>
+           <ul class="nav navbar-nav navbar-right" id="nav_coll">
+               <li>
+                   <a href="#">
+                       <img src="images/头像.png" alt=""/>
+                       <span class="header_rg_text">HI' 智途</span>
+                   </a>
+               </li>
+               <li class="active">
+                   <a href="#">
+                       <img src="images/设置.png" alt=""/><br/>
+                       <span class="header_text">编辑</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <img src="images/退出.png" alt=""/><br/>
+                       <span class="header_text">退出</span>
+                   </a>
+               </li>
+           </ul>
+       </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-2" style="padding-right: 0">
+            <div class="row" style="margin: 0;">
+                <div class="col-md-12 timeData">
+                    <div class="timeDay">星期四</div>
+                    <div>第三周</div>
+                    <div class="timeClock">17 : 00</div>
+                    <div class="timeYear">2017-03-22</div>
+                </div>
+            </div>
+            <ul id="myTab" class="nav nav-tabs nav-stacked">
+                <li>
+                    <a href="#edit_Profile" data-toggle="tab"><i></i>修改资料</a>
+                </li>
+                <li>
+                    <a href="#modify_password" data-toggle="tab"><i></i>修改密码</a>
+                </li>
+                <li>
+                    <a href="#edit_avatar" data-toggle="tab"><i></i>编辑日报</a>
+                </li>
+                <li class="active">
+                    <a href="#daily" data-toggle="tab"><i></i>我的日报</a>
+                </li>
+                <li>
+                    <a href="#project" data-toggle="tab"><i></i>我的项目</a>
+                </li>
+                <li>
+                    <a href="#task" data-toggle="tab"><i></i>我的任务</a>
+                </li>
+                <li>
+                    <a href="#notice" data-toggle="tab"><i></i>我的公告</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="edit_Profile">
+                    <p>修改资料</p>
+                </div>
+                <div class="tab-pane fade" id="modify_password">
+                    <p>修改密码。</p>
+                </div>
+                <div class="tab-pane fade" id="edit_avatar">
+                    <p>编辑日志</p>
+                </div>
+                <div class="tab-pane fade" id="daily">
+                    <p>我的日志</p>
+                </div>
+                <div class="tab-pane fade" id="project">
+                    <p>我的项目</p>
+                </div>
+                <div class="tab-pane fade" id="task">
+                    <p>我的任务</p>
+                </div>
+                <div class="tab-pane fade" id="notice">
+                    <p>我的公告。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
